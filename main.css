@@ -1,0 +1,162 @@
+body {
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.heading{
+  color: #e63f7d;
+  text-align: center;
+  font-size: 48px;
+
+}
+
+p.sub_heading {
+  color: hsl(262, 8%, 52%);
+  margin: 0rem 10rem 1.8rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.head_subheading {
+  width: 60vw;
+  height: 20vh;
+  overflow: hidden;
+}
+
+
+h4 {
+  color: black; 
+}
+
+.services-info-left {
+  text-align: right;
+  font-size: 2.3rem;
+  font-weight: 300;
+  padding: 0px 0px 0px 20px;
+  font: 15px roboto, serif;
+  color: #555555;
+  position: relative;
+}
+
+.services-info-right {
+  text-align: left;
+  font-size: 2.3rem;
+  font-weight: 300;
+  padding: 0px 20px 0px 0px;
+  font: 15px roboto, serif;
+  color: #555555;
+  position: relative;
+}
+
+strong {
+  color: #222222;
+  font: 20px roboto, serif;
+}
+
+
+.container {
+  display: flex;
+  align-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+
+.left-corner {
+  flex: 0.33;
+  padding: 48px 15px 0px;
+}
+
+.image {
+  flex: 0.33;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-corner {
+  padding: 48px 15px 0px;
+  flex: 0.33;
+}
+
+.service-left {
+  display: flex;
+  padding: 20px;
+}
+
+ .service-right {
+    display: flex;
+    padding: 20px
+}
+
+.service-1 {
+    flex: 0.88;
+    padding: 0px 0px 30px 0px;
+    text-align: right;
+}
+
+.service-2 {
+  flex: 0.88;
+  padding: 0px 0px 30px 0px;
+  text-align: left;
+}
+
+.icon {
+    flex: 0.12;
+    text-align: center;
+    padding: 30px;
+    /* justify-content: center;
+    align-content: center; */
+}
+
+.sub-icon {
+    display: flex;
+    /* padding: 5px;
+    box-sizing: border-box; */
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        rgb(228, 60, 112),
+        rgb(200, 36, 211)
+
+    );
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon :hover{
+    background: linear-gradient(
+        to left,
+        rgb(228, 60, 112),
+        rgb(200, 36, 211)
+
+    );    
+}
+
+.sub-icon > i{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.service-right {
+  align-content: left;
+}
+
+.center {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .head_subheading {
+      width: 90vw;
+      height: 30vh;
+    }
+  }
